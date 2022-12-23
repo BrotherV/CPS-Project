@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bvtech.toolslibrary.layouts.ExtendCoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhiteDeg2"
+    android:id="@+id/layMain">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginRight="@dimen/view_margin"
+            android:background="@drawable/rectangle_grey"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.05">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.robinhood.ticker.TickerView
+                    android:id="@+id/tickerStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/view_margin_6"
+                    android:text="@string/status"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="@dimen/font_medium" />
+
+                <com.robinhood.ticker.TickerView
+                    android:id="@+id/tickerTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/view_margin_6"
+                    android:text="@string/time"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="@dimen/font_medium" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgConnection"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="@dimen/view_margin_4"
+                android:src="@drawable/avd_disconnect"
+                app:tint="@color/colorGreyDark" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <com.bvtech.toolslibrary.widget.CircularProgressBar
+                android:id="@+id/circularProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cpb_background_progressbar_color="@color/colorGreyLight"
+                app:cpb_background_progressbar_width="16dp"
+                app:cpb_progress_direction="to_right"
+                app:cpb_progressbar_color="@color/colorGreen"
+                app:cpb_progressbar_width="24dp"
+                app:cpb_round_border="true"
+                app:cpb_start_angle="0" />
+
+            <com.robinhood.ticker.TickerView
+                android:id="@+id/tickerHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/connect"
+                android:textColor="@color/colorAccent2"
+                android:textSize="@dimen/font_very_large" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btnCopy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/image_padding_size"
+            android:background="@drawable/button_oval_blue"
+            android:text="@string/copy"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/btnStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1" />
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/image_padding_size"
+            android:background="@drawable/button_oval_blue"
+            android:text="@string/start"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/btnConnect"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1" />
+
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/image_padding_size"
+            android:background="@drawable/button_oval_green"
+            android:text="@string/connect"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include android:id="@+id/include" layout="@layout/layout_toolbar" />
+</com.bvtech.toolslibrary.layouts.ExtendCoordinatorLayout>

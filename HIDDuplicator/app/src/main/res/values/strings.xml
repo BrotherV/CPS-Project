@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">HID Duplicator</string>
+
+    <string name="time">Time:</string>
+    <string name="status">Status:</string>
+    <string name="event">Event:</string>
+    <string name="mesh_nodes">Mesh nodes:</string>
+    <string name="connect">Connect</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="copy">Copy</string>
+
+    <!--Mesh strings-->
+    <string name="mesh_disconnected">Not connected</string>
+    <string name="mesh_last_status">Last event</string>
+    <string name="mesh_connecting">Connecting</string>
+    <string name="mesh_lost_connection">Socket error, try to reconnect</string>
+    <string name="mesh_socket_error">Socket Err reconnecting</string>
+
+    <string name="mesh_list_header">Select Mesh node ID\'s</string>
+    <string name="mesh_send_receiver">Receiving node</string>
+    <string name="mesh_send_msg_header">Enter message below</string>
+    <string name="mesh_send_button">SEND</string>
+    <string name="mesh_send_broadcast">BROADCAST</string>
+    <string name="mesh_send_sel_pred">Select predefined message</string>
+
+    <string name="mesh_filter_clear">CLEAR FILTER</string>
+
+    <string name="mesh_event_time_delay">Time Delay</string>
+    <string name="mesh_event_time_sync">Time Sync</string>
+    <string name="mesh_event_node_req">Node Sync Request</string>
+    <string name="mesh_event_node_reply">Node Sync Reply</string>
+    <string name="mesh_event_ota_adv">OTA_ADV</string>
+    <string name="mesh_event_ota_req">OTA_REQ</string>
+</resources>

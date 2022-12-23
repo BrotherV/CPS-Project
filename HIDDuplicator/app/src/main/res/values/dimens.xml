@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="tab_layout_height">56dp</dimen>
+    <dimen name="strokeWidth">2dp</dimen>
+    <dimen name="strokeWidth_8">8dp</dimen>
+    <dimen name="tab_image_size">48dp</dimen>
+    <dimen name="tab_layout_size">64dp</dimen>
+    <dimen name="tab_layout_offset_size">56dp</dimen>
+    <dimen name="offset_layout">64dp</dimen>
+    <dimen name="min_edit_text_height">42dp</dimen>
+    <dimen name="min_dialog_edit_text_height">32dp</dimen>
+    <dimen name="min_layout_height">32dp</dimen>
+    <dimen name="min_list_width">48dp</dimen>
+    <dimen name="sliding_menu_width">142dp</dimen>
+    <dimen name="slidemenu_button_size">48dp</dimen>
+    <dimen name="button_size">48dp</dimen>
+    <dimen name="min_layout_margin">88dp</dimen>
+
+    <!-- Font size for different type of screen. -->
+    <dimen name="font_very_small">9sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_medium">14sp</dimen>
+    <dimen name="font_large">16sp</dimen>
+    <dimen name="font_very_large">20sp</dimen>
+
+    <dimen name="buttonRadius">6dp</dimen>
+    <dimen name="buttonRadius_4">4dp</dimen>
+    <dimen name="shapeRadius">8dp</dimen>
+    <dimen name="shadowRadius">4</dimen>
+    <dimen name="shadowDy">3</dimen>
+    <dimen name="shadowDx">1</dimen>
+
+    <integer name="checkAnimDelay">150</integer>
+    <integer name="buttonAnimDelay">300</integer>
+
+    <dimen name="view_margin">12dp</dimen>
+    <dimen name="view_margin_2">2dp</dimen>
+    <dimen name="view_margin_6">6dp</dimen>
+    <dimen name="view_margin_16">16dp</dimen>
+    <dimen name="view_margin_20">20dp</dimen>
+    <dimen name="view_margin_24">24dp</dimen>
+    <dimen name="view_margin_4">4dp</dimen>
+    <dimen name="view_margin_8">8dp</dimen>
+    <dimen name="view_margin_12">12dp</dimen>
+    <dimen name="report_image_size">24dp</dimen>
+    <dimen name="image_padding_size">8dp</dimen>
+    <dimen name="card_padding_size">6dp</dimen>
+    <dimen name="text_padding_size">4dp</dimen>
+    <dimen name="padding_size_8">8dp</dimen>
+    <dimen name="text_margin_size">4dp</dimen>
+
+    <dimen name="layout_padding_size">12dp</dimen>
+
+    <dimen name="stepper_side_control_text_size">20sp</dimen>
+</resources>

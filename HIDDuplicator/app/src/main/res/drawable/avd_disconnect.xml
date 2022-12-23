@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:aapt="http://schemas.android.com/aapt"
+	tools:targetApi="lollipop">
+
+	<aapt:attr name="android:drawable">
+        <vector xmlns:android="http://schemas.android.com/apk/res/android"
+			android:viewportWidth="72"
+			android:viewportHeight="72"
+			android:width="32dp"
+			android:height="32dp">
+
+			<group
+				android:name="outlet">
+				<path android:fillColor="#FFFFFF"
+					android:pathData="M10,33C10,33 4,33 4,33 4,33 4,38 4,38 4,38 10,38 10,38 12.8,51.14 24.7,49 35,49 35,49 35,44 35,44 35,44 23,44 23,44 23,44 23,38 23,38 23,38 35,38 35,38 35,38 35,33 35,33 35,33 23,33 23,33 23,33 23,27 23,27 23,27 35,27 35,27 35,27 35,22 35,22 24.7,22 12.8,19.86 10,33Z"
+					/>
+			</group>
+			<group
+				android:name="plug">
+				<path android:fillColor="#FFFFFF"
+					android:pathData="M48,22C48,22 48,27 48,27 48,27 37,27 37,27 37,27 37,33 37,33 37,33 48,33 48,33 48,33 48,38 48,38 48,38 37,38 37,38 37,38 37,44 37,44 37,44 48,44 48,44 48,44 48,49 48,49 56.02,48.8 60.8,46.57 62,38 62,38 68,38 68,38 68,38 68,33 68,33 68,33 62,33 62,33 60.8,24.43 56.02,22.2 48,22Z"
+					/>
+			</group>
+
+		</vector>
+    </aapt:attr>
+
+	<target android:name="outlet">
+		<aapt:attr name="android:animation" >
+			<objectAnimator
+				android:duration="250"
+				android:propertyName="translateX"
+				android:valueFrom="0"
+				android:valueTo="8"
+				android:valueType="floatType"/>
+		</aapt:attr>
+	</target>
+	<target android:name="plug">
+		<aapt:attr name="android:animation" >
+			<objectAnimator
+				android:duration="250"
+				android:propertyName="translateX"
+				android:valueFrom="0"
+				android:valueTo="-8"
+				android:valueType="floatType"/>
+		</aapt:attr>
+	</target>
+</animated-vector>
